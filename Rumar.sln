@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RumarApi", "..\RumarApi\RumarApi.csproj", "{978A4D6E-0A21-64DB-E1EA-7F67568F9ACD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RumarApp", "RumarApp\RumarApp.csproj", "{6FFC4A28-C010-4501-BA3F-3A685A1C1C03}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{978A4D6E-0A21-64DB-E1EA-7F67568F9ACD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{978A4D6E-0A21-64DB-E1EA-7F67568F9ACD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{978A4D6E-0A21-64DB-E1EA-7F67568F9ACD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{978A4D6E-0A21-64DB-E1EA-7F67568F9ACD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FFC4A28-C010-4501-BA3F-3A685A1C1C03}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{6FFC4A28-C010-4501-BA3F-3A685A1C1C03}.Debug|Any CPU.Build.0 = Debug|x64
+		{6FFC4A28-C010-4501-BA3F-3A685A1C1C03}.Debug|Any CPU.Deploy.0 = Debug|x64
+		{6FFC4A28-C010-4501-BA3F-3A685A1C1C03}.Release|Any CPU.ActiveCfg = Release|x64
+		{6FFC4A28-C010-4501-BA3F-3A685A1C1C03}.Release|Any CPU.Build.0 = Release|x64
+		{6FFC4A28-C010-4501-BA3F-3A685A1C1C03}.Release|Any CPU.Deploy.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

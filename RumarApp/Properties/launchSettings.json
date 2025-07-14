@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "RumarApp (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "RumarApp (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

@@ -1,0 +1,1 @@
+C:\Users\jeiko\OneDrive\Escritorio\App\rumar-app\RumarApp\RumarApp.csproj;x64
