@@ -1,0 +1,6 @@
+{
+  "DatabaseSettings": {
+    "DBProvider": "mssql",
+    "ConnectionString": "Server=192.168.191.224;Initial Catalog=cssclouderpdbdev;Persist Security Info=False;User ID=ErpDev;Password=Dev2024*;MultipleActiveResultSets=True;Encrypt=True;TrustServerCertificate=True;Connection Timeout=30;"
+  }
+}
