@@ -90,4 +90,12 @@
         </Setter>
     </Style>
 
+    <Style x:Key="SidebarButton" TargetType="NavigationViewItem">
+        <Setter Property="Background" Value="{ThemeResource Gold500Brush}"/>
+        <Setter Property="Foreground" Value="{ThemeResource BlackBrush}"></Setter>
+        <Setter Property="BackgroundSizing" Value="OuterBorderEdge" />
+        <Setter Property="BorderBrush" Value="{ThemeResource Gold500Brush}" />
+        <Setter Property="CornerRadius" Value="{ThemeResource ControlCornerRadius}" />
+    </Style>
+
 </ResourceDictionary>

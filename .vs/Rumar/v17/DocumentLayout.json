@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\jeiko\\OneDrive\\Escritorio\\App\\rumar-app\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|C:\\Users\\jeiko\\OneDrive\\Escritorio\\App\\rumar-app\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{6FFC4A28-C010-4501-BA3F-3A685A1C1C03}|RumarApp\\RumarApp.csproj|c:\\users\\jeiko\\onedrive\\escritorio\\app\\rumar-app\\rumarapp\\views\\controls\\dasboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6FFC4A28-C010-4501-BA3F-3A685A1C1C03}|RumarApp\\RumarApp.csproj|solutionrelative:rumarapp\\views\\controls\\dasboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FFC4A28-C010-4501-BA3F-3A685A1C1C03}|RumarApp\\RumarApp.csproj|c:\\users\\jeiko\\onedrive\\escritorio\\app\\rumar-app\\rumarapp\\views\\layout\\layoutcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6FFC4A28-C010-4501-BA3F-3A685A1C1C03}|RumarApp\\RumarApp.csproj|solutionrelative:rumarapp\\views\\layout\\layoutcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FFC4A28-C010-4501-BA3F-3A685A1C1C03}|RumarApp\\RumarApp.csproj|c:\\users\\jeiko\\onedrive\\escritorio\\app\\rumar-app\\rumarapp\\views\\controls\\dasboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FFC4A28-C010-4501-BA3F-3A685A1C1C03}|RumarApp\\RumarApp.csproj|solutionrelative:rumarapp\\views\\controls\\dasboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FFC4A28-C010-4501-BA3F-3A685A1C1C03}|RumarApp\\RumarApp.csproj|c:\\users\\jeiko\\onedrive\\escritorio\\app\\rumar-app\\rumarapp\\resources\\styles\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6FFC4A28-C010-4501-BA3F-3A685A1C1C03}|RumarApp\\RumarApp.csproj|solutionrelative:rumarapp\\resources\\styles\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FFC4A28-C010-4501-BA3F-3A685A1C1C03}|RumarApp\\RumarApp.csproj|c:\\users\\jeiko\\onedrive\\escritorio\\app\\rumar-app\\rumarapp\\views\\controls\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6FFC4A28-C010-4501-BA3F-3A685A1C1C03}|RumarApp\\RumarApp.csproj|solutionrelative:rumarapp\\views\\controls\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FFC4A28-C010-4501-BA3F-3A685A1C1C03}|RumarApp\\RumarApp.csproj|c:\\users\\jeiko\\onedrive\\escritorio\\app\\rumar-app\\rumarapp\\views\\controls\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FFC4A28-C010-4501-BA3F-3A685A1C1C03}|RumarApp\\RumarApp.csproj|solutionrelative:rumarapp\\views\\controls\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -13,8 +33,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 361,
-          "SelectedChildIndex": 6,
+          "DockedWidth": 457,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,15 +62,86 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LayoutControl.xaml",
+              "DocumentMoniker": "C:\\Users\\jeiko\\OneDrive\\Escritorio\\App\\rumar-app\\RumarApp\\Views\\Layout\\LayoutControl.xaml",
+              "RelativeDocumentMoniker": "RumarApp\\Views\\Layout\\LayoutControl.xaml",
+              "ToolTip": "C:\\Users\\jeiko\\OneDrive\\Escritorio\\App\\rumar-app\\RumarApp\\Views\\Layout\\LayoutControl.xaml",
+              "RelativeToolTip": "RumarApp\\Views\\Layout\\LayoutControl.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-28T22:01:51.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dasboard.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\jeiko\\OneDrive\\Escritorio\\App\\rumar-app\\RumarApp\\Views\\Controls\\Dasboard.xaml.cs",
+              "RelativeDocumentMoniker": "RumarApp\\Views\\Controls\\Dasboard.xaml.cs",
+              "ToolTip": "C:\\Users\\jeiko\\OneDrive\\Escritorio\\App\\rumar-app\\RumarApp\\Views\\Controls\\Dasboard.xaml.cs",
+              "RelativeToolTip": "RumarApp\\Views\\Controls\\Dasboard.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T21:34:07.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": ".gitignore",
-              "DocumentMoniker": "C:\\Users\\jeiko\\OneDrive\\Escritorio\\App\\rumar-app\\.gitignore",
-              "RelativeDocumentMoniker": ".gitignore",
-              "ToolTip": "C:\\Users\\jeiko\\OneDrive\\Escritorio\\App\\rumar-app\\.gitignore",
-              "RelativeToolTip": ".gitignore",
-              "ViewState": "AgIAAJkBAAAAAAAAAAAiwMcBAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-07-14T22:49:14.71Z",
+              "Title": "Dasboard.xaml",
+              "DocumentMoniker": "C:\\Users\\jeiko\\OneDrive\\Escritorio\\App\\rumar-app\\RumarApp\\Views\\Controls\\Dasboard.xaml",
+              "RelativeDocumentMoniker": "RumarApp\\Views\\Controls\\Dasboard.xaml",
+              "ToolTip": "C:\\Users\\jeiko\\OneDrive\\Escritorio\\App\\rumar-app\\RumarApp\\Views\\Controls\\Dasboard.xaml",
+              "RelativeToolTip": "RumarApp\\Views\\Controls\\Dasboard.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-28T21:33:49.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Login.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\jeiko\\OneDrive\\Escritorio\\App\\rumar-app\\RumarApp\\Views\\Controls\\Login.xaml.cs",
+              "RelativeDocumentMoniker": "RumarApp\\Views\\Controls\\Login.xaml.cs",
+              "ToolTip": "C:\\Users\\jeiko\\OneDrive\\Escritorio\\App\\rumar-app\\RumarApp\\Views\\Controls\\Login.xaml.cs",
+              "RelativeToolTip": "RumarApp\\Views\\Controls\\Login.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T21:21:53.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Login.xaml",
+              "DocumentMoniker": "C:\\Users\\jeiko\\OneDrive\\Escritorio\\App\\rumar-app\\RumarApp\\Views\\Controls\\Login.xaml",
+              "RelativeDocumentMoniker": "RumarApp\\Views\\Controls\\Login.xaml",
+              "ToolTip": "C:\\Users\\jeiko\\OneDrive\\Escritorio\\App\\rumar-app\\RumarApp\\Views\\Controls\\Login.xaml",
+              "RelativeToolTip": "RumarApp\\Views\\Controls\\Login.xaml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAE4AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-28T21:21:51.341Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 457,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Styles.xaml",
+              "DocumentMoniker": "C:\\Users\\jeiko\\OneDrive\\Escritorio\\App\\rumar-app\\RumarApp\\Resources\\Styles\\Styles.xaml",
+              "RelativeDocumentMoniker": "RumarApp\\Resources\\Styles\\Styles.xaml",
+              "ToolTip": "C:\\Users\\jeiko\\OneDrive\\Escritorio\\App\\rumar-app\\RumarApp\\Resources\\Styles\\Styles.xaml",
+              "RelativeToolTip": "RumarApp\\Resources\\Styles\\Styles.xaml",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAWwGUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-28T22:05:39.186Z",
               "EditorCaption": ""
             }
           ]

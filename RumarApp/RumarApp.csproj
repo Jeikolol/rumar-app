@@ -1,7 +1,7 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
+    <TargetFramework>net9.0-windows10.0.19041.0</TargetFramework>
     <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
     <RootNamespace>RumarApp</RootNamespace>
     <ApplicationManifest>app.manifest</ApplicationManifest>
@@ -11,6 +11,7 @@
     <UseWinUI>true</UseWinUI>
     <EnableMsixTooling>true</EnableMsixTooling>
     <Nullable>enable</Nullable>
+    <UserSecretsId>86c4b9b2-4457-4b21-a494-9bfade7aa881</UserSecretsId>
   </PropertyGroup>
   <ItemGroup>
     <Content Remove="Resources\Styles\Colors.xaml" />
@@ -20,8 +21,10 @@
     <None Remove="Assets\logo2.png" />
     <None Remove="Resources\Styles\Colors.xaml" />
     <None Remove="Resources\Styles\Styles.xaml" />
+    <None Remove="Views\Dasboard.xaml" />
+    <None Remove="Views\Layout\LayoutControl.xaml" />
     <None Remove="Views\Login.xaml" />
-    <None Remove="Views\MainControl.xaml" />
+    <None Remove="Views\Pages\DashboardPage.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -47,13 +50,9 @@
     <ProjectCapability Include="Msix" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="6.0.0" />
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.4188" />
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.7.250606001" />
-  </ItemGroup>
-  <ItemGroup>
-    <Page Update="Views\MainControl.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Views\Login.xaml">
@@ -79,5 +78,26 @@
   </PropertyGroup>
   <ItemGroup>
     <Resource Remove="Resources\Styles\Styles.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Shared\Shared.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\Dasboard.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Controls\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\Pages\DashboardPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\Layout\LayoutControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
 </Project>

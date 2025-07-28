@@ -5,6 +5,8 @@ using Microsoft.UI.Xaml.Data;
 using Microsoft.UI.Xaml.Input;
 using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Navigation;
+using RumarApp.Views;
+using RumarApp.Views.Layout;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -24,15 +26,18 @@ namespace RumarApp
     /// </summary>
     public sealed partial class MainWindow : Window
     {
+        public static MainWindow Instance { get; private set; }
+
         public MainWindow()
         {
             InitializeComponent();
+            Instance = this;
 
             bool isLoggedIn = ApplicationData.Current.LocalSettings.Values["IsLoggedIn"] as bool? == true;
 
             if (isLoggedIn)
             {
-                ShowMainControl();
+                ShowDasboardControl();
             }
             else
             {
@@ -42,17 +47,15 @@ namespace RumarApp
 
         private void ShowLoginControl()
         {
-            var loginControl = new Views.LoginControl();
-            //loginControl.LoginSucceeded += (s, e) => ShowMainControl();
+            var loginControl = new LoginControl(ShowDasboardControl);
             RootGrid.Children.Clear();
             RootGrid.Children.Add(loginControl);
         }
 
-        private void ShowMainControl()
+        private void ShowDasboardControl()
         {
-            var mainControl = new Views.MainControl();
             RootGrid.Children.Clear();
-            RootGrid.Children.Add(mainControl);
+            RootGrid.Children.Add(new LayoutControl());
         }
     }
 }

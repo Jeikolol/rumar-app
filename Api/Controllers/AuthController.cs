@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
-using RumarApi.Entities.Identity;
+using Shared.Application.Identity.Tokens;
+using Shared.Entities.Identity;
+using Shared.Infrastructure.Auth.Jwt;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -12,73 +14,36 @@ namespace RumarApi.Controllers
     [Route("api/[controller]")]
     public class AuthController : ControllerBase
     {
-        private readonly UserManager<ApplicationUser> _userManager;
-        private readonly SignInManager<ApplicationUser> _signInManager;
-        private readonly IConfiguration _config;
+        private readonly ITokenService _tokenService;
 
-        public AuthController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, IConfiguration config)
+        public AuthController(ITokenService tokenService)
         {
-            _userManager = userManager;
-            _signInManager = signInManager;
-            _config = config;
+            _tokenService = tokenService;
+        }
+        
+
+        [HttpPost("login")]
+        public async Task<TokenResponse> Login(TokenRequest dto, CancellationToken cancellationToken)
+        {
+            return await _tokenService.GetTokenAsync(dto, GetIpAddress(), cancellationToken);
         }
 
-        //[HttpPost("register")]
-        //public async Task<IActionResult> Register(RegisterDto dto)
-        //{
-        //    var user = new ApplicationUser
-        //    {
-        //        UserName = dto.Email,
-        //        Email = dto.Email,
-        //        FullName = dto.FullName
-        //    };
-
-        //    var result = await _userManager.CreateAsync(user, dto.Password);
-
-        //    if (!result.Succeeded)
-        //        return BadRequest(result.Errors);
-
-        //    await _userManager.AddToRoleAsync(user, "Customer");
-
-        //    return Ok("User registered");
-        //}
-
-        //[HttpPost("login")]
-        //public async Task<IActionResult> Login(LoginDto dto)
-        //{
-        //    var user = await _userManager.FindByEmailAsync(dto.Email);
-        //    if (user == null || !await _userManager.CheckPasswordAsync(user, dto.Password))
-        //        return Unauthorized();
-
-        //    var roles = await _userManager.GetRolesAsync(user);
-        //    var token = GenerateJwt(user, roles);
-
-        //    return Ok(new { token });
-        //}
-
-        private string GenerateJwt(ApplicationUser user, IList<string> roles)
+        private string GetIpAddress()
         {
-            var claims = new List<Claim>
-        {
-            new(ClaimTypes.NameIdentifier, user.Id),
-            new(ClaimTypes.Email, user.Email),
-            new(ClaimTypes.Name, user.UserName)
-        };
+            if (Request.Headers.ContainsKey("X-Forwarded-For"))
+            {
+                var header = Request.Headers["X-Forwarded-For"].ToString();
 
-            claims.AddRange(roles.Select(role => new Claim(ClaimTypes.Role, role)));
+                // Sometimes the header contains multiple IPs separated by commas, take the first one
+                var ip = header.Split(',').FirstOrDefault()?.Trim();
 
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
-            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+                if (!string.IsNullOrEmpty(ip))
+                    return ip;
+            }
 
-            var token = new JwtSecurityToken(
-                issuer: _config["Jwt:Issuer"],
-                audience: _config["Jwt:Audience"],
-                claims: claims,
-                expires: DateTime.UtcNow.AddHours(1),
-                signingCredentials: creds
-            );
-
-            return new JwtSecurityTokenHandler().WriteToken(token);
+            // Fall back to direct connection IP
+            return HttpContext.Connection.RemoteIpAddress?.MapToIPv4().ToString() ?? "N/A";
         }
+
     }
 }

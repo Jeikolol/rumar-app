@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RumarApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+794f94549a1a7679afee7e89ecea1d70e60de5e5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+69956f4a2bff79858f5c32eb5982e5370e9da4c4")]
 [assembly: System.Reflection.AssemblyProductAttribute("RumarApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RumarApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
